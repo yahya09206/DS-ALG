@@ -13,7 +13,7 @@ public class Main {
 
     //get integers from user method
     public static int[] getIntegers(int number){
-        System.out.println("Enter integers " + number + " integer values. \r" );
+        System.out.println("Enter " + number + " integer values. \r" );
         //define array from user input
         int[] values = new int[number];
         for(int i = 0; i < values.length; i++){
@@ -21,6 +21,12 @@ public class Main {
         }
         return values;
     }
+
+    //print array values
+    public static void printArray(int[] array){
+        System.out.println(array);
+    }
+
 }
 
 //Arrays allow you to store a sequence of values
