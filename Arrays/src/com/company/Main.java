@@ -11,6 +11,7 @@ public class Main {
         for(int i = 0; i < myIntegers.length; i++){
             System.out.println("Element " + i + ", typed value was " + myIntegers[i]);
         }
+        System.out.println("The average is " + getAverage(myIntegers));
 
     }
 
@@ -30,6 +31,7 @@ public class Main {
         for(int i = 0; i < array.length; i++){
             sum += array[i];
         }
+        //cast to double
         return (double) sum / (double)array.length;
     }
 }
