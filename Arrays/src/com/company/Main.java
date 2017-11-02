@@ -8,12 +8,14 @@ public class Main {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         //Define array of 10 integers
-        int[] myIntegers = getIntegers(10);
+        int[] myIntegers = getIntegers(5);
+        //pass my integers to print array method
+        printArray(myIntegers);
     }
 
-    //get integers from user method
+    //get integers from user input
     public static int[] getIntegers(int number){
-        System.out.println("Enter " + number + " integer values. \r" );
+        System.out.println("Enter " + number + " integer values:\r" );
         //define array from user input
         int[] values = new int[number];
         for(int i = 0; i < values.length; i++){
@@ -24,7 +26,9 @@ public class Main {
 
     //print array values
     public static void printArray(int[] array){
-        System.out.println(array);
+        for(int i = 0; i < array.length; i++){
+            System.out.println("Element " + i + " contents " + array[i]);
+        }
     }
 
 }
