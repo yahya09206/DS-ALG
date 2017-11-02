@@ -10,7 +10,8 @@ public class Main {
         //Define array of 10 integers
         int[] myIntegers = getIntegers(5);
         //pass my integers to print array method
-        printArray(myIntegers);
+        int[] sorted = sortIntegers(myIntegers);
+        printArray(sorted);
     }
 
     //get integers from user input
