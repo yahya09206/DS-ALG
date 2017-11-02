@@ -23,6 +23,15 @@ public class Main {
         }
         return values;
     }
+
+    //method for calculating average of numbers
+    public static double getAverage(int[] array){
+        int sum = 0;
+        for(int i = 0; i < array.length; i++){
+            sum += array[i];
+        }
+        return (double) sum / (double)array.length;
+    }
 }
 
 //Arrays allow you to store a sequence of values
