@@ -20,7 +20,7 @@ public class GroceryList {
         }
     }
 
-    //modify list method old and new
+    //modify list method new
     public void modifyGroceryItem(String newItem){
         int position = findItem(newItem);
         if(position >= 0){
@@ -28,14 +28,23 @@ public class GroceryList {
         }
 
     }
+    //old modify function
     public void modifyGroceryItem(int position, String newItem){
         groceryList.set(position, newItem);
         System.out.println("Grocery item " + (position + 1) + " has been modified");
     }
 
+    //new remove method
+    public void removeItem(String item){
+        int position = findItem(item);
+        if(position >= 0){
+            removeItem(position);
+        }
+    }
+
+
     //remove item from list method
     public void removeItem(int position){
-        String theItem = groceryList.get(position-1);
         groceryList.remove(position);
     }
 
