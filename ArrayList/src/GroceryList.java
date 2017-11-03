@@ -29,4 +29,10 @@ public class GroceryList {
         String theItem = groceryList.get(position);
         groceryList.remove(position);
     }
+
+    //find items method
+    public String findItem(String searchItem){
+//        boolean exists = groceryList.contains(searchItem);
+        int position = groceryList.indexOf(searchItem);
+    }
 }
