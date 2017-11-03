@@ -1,3 +1,5 @@
+package com.company;
+
 import java.util.ArrayList;
 
 public class GroceryList {
@@ -34,5 +36,9 @@ public class GroceryList {
     public String findItem(String searchItem){
 //        boolean exists = groceryList.contains(searchItem);
         int position = groceryList.indexOf(searchItem);
+        if(position >= 0){
+            return groceryList.get(position);
+        }
+        return null;
     }
 }
