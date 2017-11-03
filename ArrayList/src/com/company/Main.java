@@ -64,14 +64,14 @@ public class Main {
         scanner.nextLine();
         System.out.println("Enter replacement item: ");
         String newItem = scanner.nextLine();
-        groceryList.modifyGroceryItem(itemNum-1, newItem);
+        groceryList.modifyGroceryItem(itemNum+1, newItem);
     }
 
     public static void removeItem(){
         System.out.print("Enter item number: ");
         int itemNum = scanner.nextInt();
         scanner.nextLine();
-        groceryList.removeItem(itemNum);
+        groceryList.removeItem(itemNum-1);
     }
 
     public static void searchForItem(){
