@@ -10,9 +10,23 @@ public class Main {
         startPhone();
         printActions();
         while(!quit){
+            System.out.println("\nEnter action: (6 to show available sections)");
+            int action = scanner.nextInt();
+            scanner.nextLine();
+
+            switch (action){
+                case 0:
+                    System.out.println("\nShutting down...");
+                    quit = true;
+                    break;
+            }
 
         }
 
+    }
+
+    private static void printContacts(){
+        mobilePhone.printContacts();
     }
 
     private static void startPhone(){
