@@ -2,12 +2,20 @@ package com.company;
 import java.util.*;
 public class Main {
     private static Scanner scanner = new Scanner(System.in);
-    private static GroceryList groceryList = new GroceryList();
+    private static MobilePhone mobilePhone = new MobilePhone("206543567");
+//    private static GroceryList groceryList = new GroceryList();
 
     public static void main(String[] args) {
+        boolean quit = false;
+        startPhone();
+        printActions();
+        while(!quit){
 
+        }
 
     }
+
+
 }
 
 //    boolean quit = false;
