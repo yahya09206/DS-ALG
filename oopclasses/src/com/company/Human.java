@@ -9,7 +9,10 @@ public class Human {
 
     //constructor method
     public Human(){
-
+        age = 5;
+        eyecolor = "brown";
+        heightInInches = 72;
+        name = "Tom from myspace";
     }
 
     //methods for different behaviors
