@@ -7,12 +7,11 @@ public class Human {
     int heightInInches;
     String eyecolor;
 
-    //constructor method
-    public Human(){
-        age = 5;
-        eyecolor = "brown";
-        heightInInches = 72;
-        name = "Tom from myspace";
+    public Human(String name, int age, int heightInInches, String eyecolor) {
+        this.name = name;
+        this.age = age;
+        this.heightInInches = heightInInches;
+        this.eyecolor = eyecolor;
     }
 
     //methods for different behaviors
