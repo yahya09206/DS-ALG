@@ -26,9 +26,9 @@ public class Main {
 //
 //        joe.speak();
 
-        Human human1 = new Human();
-        Human human2 = new Human();
-        Human human3 = new Human();
+        Human human1 = new Human("Mike", 22, 78, "yellow");
+        Human human2 = new Human("Kylie", 19, 87, "blue");
+        Human human3 = new Human("Brian", 34, 56, "green");
 
         human1.speak();
         human2.speak();
