@@ -10,8 +10,12 @@ public class Main {
 
         //new human object
         tom = new Human();
+        tom.age = 5;
+        tom.eyecolor = "brown";
+        tom.heightInInches = 72;
+        tom.name = "Tom from myspace";
 
-
+        tom.speak();
 
 
     }
