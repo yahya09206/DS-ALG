@@ -7,6 +7,11 @@ public class Human {
     int heightInInches;
     String eyecolor;
 
+    //constructor method
+    public Human(){
+
+    }
+
     //methods for different behaviors
     public void speak(){
         System.out.println("Hello, my name is " + name);
