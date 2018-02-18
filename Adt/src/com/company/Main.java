@@ -6,3 +6,4 @@ public class Main {
 	// write your code here
     }
 }
+//abstract means handling more advanced functionality
