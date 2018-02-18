@@ -1,10 +1,23 @@
 package com.company;
 
 public class Counter {
-    String counter;
+    private String name = null;
+    private int value = 0;
 
-    public Counter(String counter) {
-        this.counter = counter;
+    public Counter(String str) {
+        this.name = str;
+    }
+
+    public void increment(){
+        value++;
+    }
+
+    public int getCurrentValue(){
+        return value;
+    }
+
+    public String toString(){
+        return name + ":" + value;
     }
 
 }
