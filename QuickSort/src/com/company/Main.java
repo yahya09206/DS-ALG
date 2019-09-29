@@ -11,4 +11,40 @@ public class Main {
             System.out.println(intArray[i]);
         }
     }
+
+    public static void quickSort(int[] input, int start, int end) {
+        if (end - start < 2){
+            return;
+        }
+
+        // find index of pivot when array is sorted
+        int pivotIndex = partition(input, start, end);
+        // quick sort left subarray
+        quickSort(input, start, pivotIndex);
+        // quick sort right subarray
+        quickSort(input, pivotIndex + 1, end);
+    }
+
+    public static int partition(int[] input, int start, int end) {
+        // This is using the first element as the first pivot
+        int pivot = input[start];
+        int i = start;
+        int j = end;
+
+        while (i < j) {
+            // use j to look for elements that are less than pivots
+            while (i < j && input[--j] >= pivot);
+            if (i < j) {
+                input[i] = input[j];
+            }
+
+            while (i < j && input[++i] <= pivot);
+            if (i < j) {
+                input[j] = input[i];
+            }
+        }
+
+        input[j] = pivot;
+        return j;
+    }
 }
