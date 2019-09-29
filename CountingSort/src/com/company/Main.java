@@ -6,6 +6,8 @@ public class Main {
 	// write your code here
         int[] intArray = { 2, 5, 9, 8, 2, 8, 7, 10, 4, 3};
 
+        countingSort(intArray, 1, 10);
+
         for (int i = 0; i < intArray.length; i++) {
             System.out.println(intArray[i]);
         }
@@ -22,7 +24,7 @@ public class Main {
         int j = 0;
         for (int i = min; i <= max; i++){
             while (countArray[i - min] > 0) {
-                input[j++] = 1;
+                input[j++] = i;
                 countArray[i - min]--;
             }
         }
