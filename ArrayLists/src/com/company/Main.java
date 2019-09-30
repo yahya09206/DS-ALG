@@ -14,5 +14,8 @@ public class Main {
         employeeList.add(new Employee("Mary", "Smith", 22));
         employeeList.add(new Employee("Mike", "Wilson", 3245));
 
+        // Print items in list
+        employeeList.forEach(employee -> System.out.println(employee));
+
     }
 }
