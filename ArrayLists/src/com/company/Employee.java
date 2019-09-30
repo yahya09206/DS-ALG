@@ -1,5 +1,6 @@
-public class Employee {
+package com.company;
 
+public class Employee {
     private String firstName;
     private String lastName;
     private int id;
