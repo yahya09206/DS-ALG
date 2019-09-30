@@ -21,5 +21,14 @@ public class Main {
 
         employeeList.set(1, new Employee("John", "Adams", 4568));
         employeeList.forEach(employee -> System.out.println(employee));
+
+        // Return how many employees were added
+        Employee[] employeeArray = employeeList.toArray(new Employee[employeeList.size()]);
+        // Print out elements
+        for (Employee employee: employeeArray) {
+            System.out.println(employee);
+        }
+
+        System.out.println(employeeList.contains(new Employee("Mary", "Smith", 22)));
     }
 }
