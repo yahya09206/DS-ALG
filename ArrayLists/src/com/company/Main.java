@@ -20,15 +20,21 @@ public class Main {
 //        System.out.println(employeeList.get(1));
 
         employeeList.set(1, new Employee("John", "Adams", 4568));
-        employeeList.forEach(employee -> System.out.println(employee));
+//        employeeList.forEach(employee -> System.out.println(employee));
 
         // Return how many employees were added
-        Employee[] employeeArray = employeeList.toArray(new Employee[employeeList.size()]);
-        // Print out elements
-        for (Employee employee: employeeArray) {
-            System.out.println(employee);
-        }
+//        Employee[] employeeArray = employeeList.toArray(new Employee[employeeList.size()]);
+//        // Print out elements
+//        for (Employee employee: employeeArray) {
+//            System.out.println(employee);
+//        }
 
         System.out.println(employeeList.contains(new Employee("Mary", "Smith", 22)));
+        System.out.println(employeeList.indexOf(new Employee("John", "Doe", 4567)));
+
+        // Remove items from list
+        employeeList.remove(2);
+        employeeList.forEach(employee -> System.out.println(employee));
+
     }
 }
